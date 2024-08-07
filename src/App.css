@@ -1,21 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital@0;1&family=Ga+Maamli&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.budget_heading{
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 500px;
+}
+.aboutus_container .para{
+  font-family: 'Shantell Sans', cursive;
+}
 .first_page {
   display: flex;
   height: 100vh;
-  background-image: url("https://cdn.pixabay.com/photo/2018/07/05/14/45/conference-3518465_1280.jpg");
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  background-image: url("./assets/background.jpg");
   background-size: cover;
   background-position: center;
   justify-content: center;
   align-items: center;
-  color: white;
-  overflow: hidden; 
-  background-color: rgb(185, 186, 187);
+  color: rgb(255, 255, 255);
+  /* overflow: hidden;  */
+  background-color: rgb(0, 0, 0);
   /* position: relative; */
+}
+.budget_sentence{
+  font-family: "Inter", sans-serif;
 }
 
 .first_page::before {
@@ -25,7 +41,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter:inherit blur(2px);
 }
 
 .first_page h1 {
@@ -34,7 +50,7 @@
 }
 
 .get-started-btn {
-  background-color:#EFC16B;
+  background-color:#c00000;
   /* color: white; */
   color: black;
   border: none;
@@ -45,7 +61,8 @@
 }
 
 .get-started-btn:hover {
-  background-color: #c1974a;
+  background-color: #ff0202;
+  color: white;
 }
 
 .getstarted_btn {
@@ -80,8 +97,9 @@
 }
 
 .aboutus_container p {
+
   font-size: 23px;
-  font-weight: 700;
+  font-weight: 200;
   
 
 }
@@ -112,10 +130,11 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.8);
+
+  background-position: center;
   transition: top 0.5s ease;
   overflow-y: auto;
-  z-index: 2;
-  backdrop-filter: blur(5px);
+  z-index: 1;
 }
 
 .event-list-container.visible {
